@@ -12,4 +12,4 @@ spec:
       spec:
          containers:
          - image: schoolofdevops/vote:v4
-         name: vote
+            name: vote
