@@ -7,8 +7,14 @@ images:
 - name: schoolofdevops/vote
   newTag: v4
 replicas:
-- count: 4
+- count: 8
   name: vote
 patches:
 - path: deployment.yaml
 - path: service.yaml
+commonLabels: 
+  project: instavote
+  env: staging
+
+commonAnnotations:
+  supported-by: "sre@example.com"
